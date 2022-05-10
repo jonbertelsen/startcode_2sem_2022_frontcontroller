@@ -1,13 +1,11 @@
-package dat.startcode.model.services;
+package dat.startcode.model.persistence;
 
 import dat.startcode.model.entities.User;
 import dat.startcode.model.exceptions.DatabaseException;
 import dat.startcode.model.persistence.ConnectionPool;
 import dat.startcode.model.persistence.UserMapper;
 
-import javax.xml.crypto.Data;
-
-public class UserFacade
+public class Facade
 {
     public static User login(String username, String password, ConnectionPool connectionPool) throws DatabaseException
     {
